@@ -20,7 +20,7 @@ header
 div.container#cabeca{
     width: 100%;
     height: 100px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 
@@ -32,7 +32,7 @@ ul{
     margin: 5px;
     width: 50%;
     height: 50%;
-    border: 1px solid black;
+    border: 1px solid red;
     list-style: none;
     display: flex;
     vertical-align: auto;
@@ -47,6 +47,16 @@ ul
 li{
     margin: 2px;
 
+}
+body
+header
+div.container#cabeca
+ul
+li
+nav.container#menu{
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
 }
 
 
@@ -66,3 +76,6 @@ div.container#corpo{
     border: 1px solid black;
     
 }
+
+
+
