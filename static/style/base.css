@@ -11,6 +11,7 @@ body
 header{
     border: 1px solid black;
     padding: 2px;
+    
 }
 
 
@@ -20,44 +21,101 @@ header
 div.container#cabeca{
     width: 100%;
     height: 100px;
+    display: flex;
+    flex-direction:initial;
+    
     /* border: 1px solid red; */
 
 }
 
-
+/* Garanta que o container do botão é âncora pro dropdown */
 body
 header
 div.container#cabeca
-ul{
-    margin: 5px;
-    width: 50%;
+div.container#espaco{
+    position: relative; /* importante para o nav absoluto ancorar aqui */
+    width: 5%;
     height: 50%;
     border: 1px solid red;
-    list-style: none;
-    display: flex;
-    vertical-align: auto;
-    margin-left: 50%;
-    align-items: center;
-    justify-content: center;
 }
-body
-header
-div.container#cabeca
-ul
-li{
-    margin: 2px;
 
-}
+/* Botão já está ok; se quiser cursor e acessibilidade visual */
 body
 header
 div.container#cabeca
-ul
-li
-nav.container#menu{
-    width: 50%;
-    height: 50%;
-    border: 1px solid black;
+div.container#espaco
+button#menu{
+    width: 100%;
+    height: 100%;
+    background-image: url(/static/imgs/icone_menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
+
+/* ESTADO FECHADO do nav */
+#zona.caixa-fechada{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    /* Dropdown: fica “pendurado” abaixo do botão */
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    /* Transições suaves */
+    transition: width .25s ease, height .25s ease, opacity .2s ease;
+    z-index: 1000; /* pra ficar acima de outros elementos */
+}
+
+/* ESTADO ABERTO do nav */
+#zona.caixa-aberta{
+    width: 220px;      /* ajuste como preferir */
+    height: 180px;     /* ajuste como preferir */
+    opacity: 1;
+    pointer-events: auto;
+
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.12);
+}
+
+/* Estilização opcional do conteúdo do menu */
+#zona ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#zona li a{
+    display: block;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: #222;
+    border-radius: 6px;
+}
+
+#zona li a:hover{
+    background: #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -68,6 +126,9 @@ main{
     border: 1px solid greenyellow;
     padding: 8px;
 }
+
+
+
 body
 main
 div.container#corpo{

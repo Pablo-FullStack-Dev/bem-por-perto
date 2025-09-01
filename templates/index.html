@@ -1,51 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem Por Perto</title>
-    <link rel="stylesheet" href="/static/style/base.css">
+    <!-- Em Flask, prefira url_for para estáticos -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/base.css') }}">
 </head>
 <body>
     <header>
         <div class="container" id="cabeca">
-            <ul>
-                <li>
-                    <button type="button" onclick="alert('Indisponivel')">Suporte</button>
-                </li>
-                <li>
-                    <button type="button" onclick="alert('Indisponivel')">Equipe</button>
-                </li>
-                <li>
-                    <button type="button" onclick="alert('Indisponivel')">Contato</button>
-                </li>
-                <li>
-                    <button type="button" onclick="alert('Indisponivel')">Agende uma visita</button>
-                </li>
-                <li>
-                    <!-- Vou tentar fazer um menu interativo. Ass: Pablo -->
-                    <nav class="container" id="menu"></nav>
-                </li>
-            </ul>
+            <div class="container" id="titulo">
+                <h1>Bem por Perto</h1>
+            </div>
+
+            <div class="container" id="espaco">
+               <button type="button" id="menu" aria-controls="zona" aria-expanded="false" aria-label="Abrir menu"></button>
+               <nav class="caixa-fechada" id="zona">
+                  <ul>
+                        <li>
+                            <button type="button" onclick="alert('Indisponivel')">Suporte</button>
+                        </li>
+                        <li>
+                            <button type="button" onclick="alert('Indisponivel')">Equipe</button>
+                        </li>
+                        <li>
+                            <button type="button" onclick="alert('Indisponivel')">Contato</button>
+                        </li>
+                        <li>
+                            <button type="button" onclick="alert('Indisponivel')">Agende uma visita</button>
+                        </li>
+                  </ul>
+               </nav> 
+            </div>
+
         </div>
     </header>
     <main>
         <section>
             <div class="container" id="corpo">
-
                 <div class="container" id="principal">
-                    <h1>Bem por Perto</h1>
                 </div>
-
             </div>
         </section>
     </main>
     <footer>
         <section>
             <div class="container" id="Sobre">
-
             </div>
         </section>
     </footer>
+    <!-- Em Flask, prefira url_for também no JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
