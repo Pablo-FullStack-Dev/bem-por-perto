@@ -15,11 +15,11 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="sobre.html">Sobre nós</a></li>
-                    <li><a href="cadas_cuidador.html">Para cuidador</a></li>
-                    <li><a href="ajuda.html">Ajuda</a></li>
-                    <li><a href="login.html">Fazer login</a></li>
-                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    <li><a href="{{ url_for('sobre') }}">Sobre nós</a></li>
+                    <li><a href="{{ url_for('cuidador') }}">Para cuidador</a></li>
+                    <li><a href="{{ url_for('ajuda') }}">Ajuda</a></li>
+                    <li><a href="{{ url_for('login') }}">Fazer login</a></li>
+                    <li><a href="{{ url_for('cadastro') }}">Cadastre-se</a></li>
                 </ul>
             </nav>
             <div class="container" id="espaco">
