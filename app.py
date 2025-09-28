@@ -3,8 +3,8 @@ from flask import Flask, render_template, request, flash, redirect
 
 app = Flask(__name__)  
 
-@app.route("/home")
-def home():
+@app.route("/inicial")
+def inicial():
     return render_template("index.html")
 
 @app.route("/sobre")
