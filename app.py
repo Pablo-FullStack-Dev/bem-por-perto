@@ -25,7 +25,15 @@ def login():
 
 @app.route("/cadastro")
 def cadastro():
-    return render_template("cadastro")
+    return render_template("cadas.html")
+
+@app.route("/explorar")
+def cadastro():
+    return render_template("explorar.html")
+
+@app.route("/reservar")
+def cadastro():
+    return render_template("reservar.html")
 
 if __name__ == '__main__': 
     app.run(debug=True)
