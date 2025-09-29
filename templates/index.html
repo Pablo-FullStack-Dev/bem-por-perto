@@ -10,15 +10,16 @@
     <header>
         <div class="container" id="cabeca">
             <div class="container" id="titulo">
-                <h1>Bem por Perto</h1>
             </div>
             <nav>
                 <ul>
+                    <li><h1>BEM POR PERTO</h1></li>
                     <li><a href="{{ url_for('sobre') }}">Sobre nós</a></li>
                     <li><a href="{{ url_for('cuidador') }}">Para cuidador</a></li>
-                    <li><a href="{{ url_for('ajuda') }}">Ajuda</a></li>
-                    <li><a href="{{ url_for('login') }}">Fazer login</a></li>
-                    <li><a href="{{ url_for('cadastro') }}">Cadastre-se</a></li>
+                    <li class="push"></li>
+                    <li><a href="{{ url_for('ajuda') }}">Ajuda</a></lia>
+                    <li><a href="{{ url_for('login') }}">Fazer login</a></lia>
+                    <li><a href="{{ url_for('cadastro') }}">Cadastre-se</a></lia>
                 </ul>
             </nav>
             <p class="descri">Cuidado para os que<br> mais precisam, de<br>forma rapida e prática</p>
@@ -32,6 +33,7 @@
             <section id="servicos">
               <h2>Nossos serviços</h2> 
               <div class="servicos">
+                <div>
                 <h4>Locomoção</h4>
                 <p>Nossos motoristas ajudam e possuem veículos especializados para transporte de idosos.</p>
               </div>
@@ -42,6 +44,7 @@
               <div>
                 <h4>Medicação</h4>
                 <p>Especialistas capazes de ajudar idosos com medicamentos e outras consultas médicas</p>
+              </div>
               </div>
             </section>
             <p class="descricao">E muitos outros serviços no nosso site</p>
