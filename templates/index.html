@@ -22,11 +22,13 @@
                     <li><a href="{{ url_for('cadastro') }}">Cadastre-se</a></li>
                 </ul>
             </nav>
-            <p>Cuidado para os que<br> mais precisam, de<br>forma rapida e prática</p>
-            <p>cadastre-se na Bem Por Perto agora e<br>consiga cuidadores para as pessoas que<br>ama assim que necessário</p>
+            <p class="descri">Cuidado para os que<br> mais precisam, de<br>forma rapida e prática</p>
+            <p class="descricao">cadastre-se na Bem Por Perto agora e<br>consiga cuidadores para as pessoas que<br>ama assim que necessário</p>
             <nav>
-              <li><a href="{{ url_for('cadastro') }}">Cadastre-se agora</a></li>
-              <li><a href="{{ url_for('explorar') }}">Explorar cuidadores</a></li>
+                <ul>
+                  <li><a href="{{ url_for('cadastro') }}" class="btn-cadastro">Cadastre-se agora</a></li>
+                  <li><a href="{{ url_for('explorar') }}" class="btn-explorar">Explorar cuidadores</a></li>
+                </ul>
             </nav>
             <div class="container" id="espaco">
                <button type="button" id="menu" aria-controls="zona" aria-expanded="false" aria-label="Abrir menu"></button>
