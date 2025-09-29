@@ -13,19 +13,72 @@ header{
     padding: 2px;
     
 }
+}
+body {
+  background-color: PaleGreen; 
+}
+
+
+nav ul {
+  font-family: w3-serif;
+  color: white;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 30px
+}
+nav ul li.push {
+   margin-left: auto;
+}
+
+.descri {
+  margin-top: 50px;
+  padding-left: 200px;
+  font-size: 30px !important;
+  font-family: Verdana, sans-serif;
+  color: white;
+  font-size: 18px;
+}
+
+.descricao {
+  font-size: 22px;
+  padding-left: 200px;
+  font-family: Verdana, sans-serif;
+  color: white;
+  font-size: 16px;
+}
+
+.btn {
+  margin-left: 150px;
+  background-color: ForestGreen;
+  color: white;
+  padding: 10px 16px;      
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;   
+  text-align: center;      
+  vertical-align: middle;  
+  font-size: 16px;          
+  line-height: 1;  
+}
 
 
 
-body
-header
-div.container#cabeca{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction:initial;
-    
-    /* border: 1px solid red; */
+.servicos {
+  display: flex;
+  gap: 20px;
+}
 
+.servicos > div {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  flex: 1;
+  min-width: 300px; 
+  background-color: ForestGreen; 
+  padding: 15px;
+  border-radius: 6px;
 }
 
 /* Garanta que o container do botão é âncora pro dropdown */
