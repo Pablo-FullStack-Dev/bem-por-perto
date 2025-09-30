@@ -5,7 +5,7 @@
 }
 body{
     padding: 5px;
-    background-color: rgb(93, 221, 93);
+    background-color: hsl(135, 36%, 76%);
     background-image: url('/static/imagens/bpp.png');
     background-size: cover;
     background-position: center;
