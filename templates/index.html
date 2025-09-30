@@ -8,25 +8,20 @@
 </head>
 <body>
     <header>
-        <div class="logo-titulo">
-      <img src="/static/imagens/logo.png" alt="Logo" class="logo">
-          </div>
-        <div class="container" id="cabeca">
-            <div class="container" id="titulo">
-            </div>
-            <div class="faixa">  
-            <nav>
-                <ul>
-                    <li><h1>BEM POR PERTO</h1></li>
-                    <li><a href="{{ url_for('sobre') }}">Sobre nós</a></li>
-                    <li><a href="{{ url_for('cuidador') }}">Para cuidador</a></li>
-                    <li class="push"></li>
-                    <li><a href="{{ url_for('ajuda') }}">Ajuda</a></lia>
-                    <li><a href="{{ url_for('login') }}">Fazer login</a></lia>
-                    <li><a href="{{ url_for('cadastro') }}">Cadastre-se</a></lia>
-                </ul>
+        <div class="faixa">
+            <nav class="lin">
+              <ul>
+                <li><img src="/static/imagens/logo.png" alt="Logo" class="logo"></li>
+                <li><h1 class="titulo">BEM POR PERTO</h1></li>
+                <li><a href="{{ url_for('sobre') }}">Sobre nós</a></li>
+                <li><a href="{{ url_for('cuidador') }}">Para cuidador</a></li>
+                <li class="push"></li>
+                <li><a href="{{ url_for('ajuda') }}">Ajuda</a></li>
+                <li><a href="{{ url_for('login') }}">Fazer login</a></li>
+                <li><a href="{{ url_for('cadastro') }}">Cadastre-se</a></li>
+              </ul>
             </nav>
-            </div>
+          </div>
             <p class="descri">Cuidado para os que<br> mais precisam, de<br>forma rapida e prática</p>
             <p class="descricao">cadastre-se na Bem Por Perto agora e<br>consiga cuidadores para as pessoas que<br>ama assim que necessário</p>
             <nav>
