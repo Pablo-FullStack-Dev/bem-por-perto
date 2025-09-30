@@ -3,58 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Cuidadores</title>
-    <link rel="stylesheet" href="static/style/base.css">
+    <title>Nao sei</title>
+    <link rel="stylesheet" href="/static/style/cadas.css">
 </head>
 <body>
     <header>
-        <h1>Cadastro de Cuidadores</h1>
-    </header>
-
+     <h1>Cadastro de Cuidadores</h1>
+  </header>
     <main>
-        <section class="container">
-            <form action="#" method="post">
-                <ul>
-                    <li>
-                        <label for="nome">Nome completo</label>
-                        <input type="text" name="nome" id="nome" placeholder="Digite o nome completo" required>
-                    </li>
+      <section class="container">
+        <form action="#" method="post" enctype="multipart/form-data">
+          <ul>
+            <li>
+              <label for ="nome">Nome completo</label>
+              <input type="text" name="nome" id="nome" placeholder="Digite o nome completo" required>
+            </li>
+            
+            <li>
+              <label for="data_nascimento">Data de Nascimento</label>
+              <input type="date" name="data_nascimento" id="data_nascimento" required>
+            </li>
+            
+            <li>
+              <label for="rg">RG</label>
+              <input type="text" name="rg" id="rg" placeholder="000.000.000-0" maxlength="12" required>
+            </li>
+            
+            <li>
+              <label for="genero">Gênero</label>
+              <select name="genero" id="genero" required>
+                <option value="">Selecione</option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="prefiro_nao_dizer">Prefiro não dizer</option>
+              </select>
+            </li>
+            
+            <li>
+              <label for="email">E-mail</label>
+              <input type="text" name="email" id="email" placeholder="seuemail@gmail.com" required>
+            </li>
+            
+            <li>
+              <label for="telefone">Telefone</label>
+              <input type="tel" name="telefone" id="telefone" placeholder="(11) 99999-9999" maxlength="15" required>
+            </li>
+            
+            <li>
+              <label for="endereco">Endereço</label>
+              <input type="text" name="endereco" id="endereco" placeholder="Rua, número, bairro, cidade" required>
+            </li>
+            
+            <li>
+              <label for="formacao">Formação</label>
+              <input type="text" name="formacao" id="formacao" placeholder="EX: Técnico em enfermagem, Cuidador de idosos" required>
+            </li>
+            
+            <li>
+            <label for="certificado">Certificados (PDF ou imagem)</label>
+            <input type="file" name="certificado" id="certificado" accept=".pdf, image/*" multiple>
+            </li>
+            
+            <li>
+              <label>Disponibilidade de horários:</label><br>
+              <input type="checkbox" name="disponibilidade" value="diurno">Diurno<br>
+              <input type="checkbox" name="disponibilidade" value="noturno">Noturno<br>
+              <input type="checkbox" name="disponibilidade" value="plantao">Plantão<br>
+              <input type="checkbox" name="disponibilidade" value="fins_de_semana">Finais de semana
+            </li>
+            
+            <li>
+              <label>Deseja atuar como:</label><br>
+              <input type="radio" name="atuacao" value="residente" required>Cuidador residente<br>
+              <input type="radio" name="atuacao" value="diarista">Diarista<br>
+              <input type="radio" name="atuacao" value="por_hora">Por hora
+            </li>
+            
+            <li>
+            <input type="submit" value="Cadastrar Cuidador">
+            <a href="{{ url_for('inicial') }}">Voltar</a>
+          </li>
+        </ul>
+      </form>
+    </section>
+  </main>
 
-                    <li>
-                        <label for="data_nascimento">Data de Nascimento</label>
-                        <input type="date" name="data_nascimento" id="data_nascimento" required>
-                    </li>
-
-                    <li>
-                        <label for="cpf">CPF</label>
-                        <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" maxlength="14" required>
-                    </li>
-
-                    <li>
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" name="telefone" id="telefone" placeholder="(11) 99999-9999" maxlength="15" required>
-                    </li>
-
-                    <li>
-                        <label for="endereco">Endereço</label>
-                        <input type="text" name="endereco" id="endereco" placeholder="Rua, número, bairro, cidade" required>
-                    </li>
-
-                    <li>
-                        <input type="submit" value="Cadastrar Cuidador">
-                        <a href="{{ url_for('inicial') }}">voltar</a>
-                    </li>
-                </ul>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <address>
-           
-        </address>
-    </footer>
+  <footer>
+    <address></address>
+  </footer>
 </body>
 </html>
-
-
