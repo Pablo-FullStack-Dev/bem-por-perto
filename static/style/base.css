@@ -11,6 +11,16 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+.faixa {
+  background-color: #2e7d32; 
+  padding: 5px 20px;
+  border: 2px solid white;
+}
+
+.logo {
+  height: 40px; 
+  width: auto;
+}
 
 body 
 header{
