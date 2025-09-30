@@ -12,24 +12,41 @@ body{
     background-repeat: no-repeat;
 }
 .faixa {
-  background-color: #2e7d32; 
-  padding: 5px 20px;
+  background-color: #2e7d32;
+  padding: 10px 20px;
   border: 2px solid white;
 }
 
-.faixa nav ul li a {
-  color: white;       
-  font-weight: bold;   
-  text-decoration: none;
-}
-
-.faixa nav ul li a:hover {
-  color: #c8f0c8;       
+.lin ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
-  height: 40px; 
+  height: 40px;
   width: auto;
+}
+
+.titulo {
+  font-size: 24px;
+  font-family: w3-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.lin ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li.push {
+   margin-left: auto;
 }
 
 body 
