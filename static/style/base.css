@@ -53,13 +53,13 @@ nav ul li.push {
   background-color: ForestGreen;
   color: white;
   padding: 10px 16px;      
-  border-radius: 6px;
+  border-radius: 20px;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;   
   text-align: center;      
   vertical-align: middle;  
-  font-size: 16px;          
+  font-size: 20px;          
   line-height: 1;  
 }
 
@@ -80,7 +80,7 @@ nav ul li.push {
   border-radius: 6px;
 }
 .des{
-  padding-left: 475px;
+  padding-left: 580px;
   font-family: Verdana, sans-serif;
   color: white;
 }
@@ -101,16 +101,17 @@ nav ul li.push {
 }
 
 .bt {
+  margin-left: 675px;
   background-color: ForestGreen;
   color: white;
   padding: 10px 16px;      
-  border-radius: 75px;
+  border-radius: 20px;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;   
   text-align: center;      
   vertical-align: middle;  
-  font-size: 16px;          
+  font-size: 20px;          
   line-height: 1;
 }
 .van{
