@@ -17,6 +17,16 @@ body{
   border: 2px solid white;
 }
 
+.faixa nav ul li a {
+  color: white;       
+  font-weight: bold;   
+  text-decoration: none;
+}
+
+.faixa nav ul li a:hover {
+  color: #c8f0c8;       
+}
+
 .logo {
   height: 40px; 
   width: auto;
