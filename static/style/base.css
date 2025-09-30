@@ -79,7 +79,40 @@ nav ul li.push {
   padding: 15px;
   border-radius: 6px;
 }
+.des{
+  padding-left: 475px;
+  font-family: Verdana, sans-serif;
+  color: white;
+}
 
+.desc{
+  margin-top: 50px;
+  padding-left: 675px;
+  font-size: 30px !important;
+  font-family: Verdana, sans-serif;
+  color: white;
+  font-size: 18px;
+}
+
+.dess{
+  padding-left: 675px;
+  font-family: Verdana, sans-serif;
+  color: white;
+}
+
+.bt {
+  background-color: ForestGreen;
+  color: white;
+  padding: 10px 16px;      
+  border-radius: 75px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;   
+  text-align: center;      
+  vertical-align: middle;  
+  font-size: 16px;          
+  line-height: 1;
+}
 /* Garanta que o container do botão é âncora pro dropdown */
 body
 header
