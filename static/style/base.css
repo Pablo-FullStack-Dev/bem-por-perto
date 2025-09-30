@@ -87,21 +87,19 @@ nav ul li.push {
 }
 
 .btn {
-  margin-left: 150px;
+  margin-left: 100px;
   background-color: ForestGreen;
   color: white;
   padding: 10px 16px;      
-  border-radius: 20px;
+  border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;   
   text-align: center;      
   vertical-align: middle;  
-  font-size: 20px;          
-  line-height: 1;  
+  font-size: 17px;          
+  line-height: 2;  
 }
-
-
 
 .servicos {
   display: flex;
@@ -140,29 +138,35 @@ nav ul li.push {
 
 .bt {
   margin-left: 675px;
+  margin-top: 25px;
   background-color: ForestGreen;
   color: white;
   padding: 10px 16px;      
-  border-radius: 20px;
+  border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;   
   text-align: center;      
   vertical-align: middle;  
-  font-size: 20px;          
-  line-height: 1;
+  font-size: 17px;          
+  line-height: 2;
 }
 .van{
-  padding-left: 700px;
+  padding-left: 930px;
   font-family: Verdana, sans-serif;
   color: white;
+  position: relative;
+  top: -150px;
 }
 
 .de{
-  padding-left: 700px;
+  padding-left: 930px;
   font-family: Verdana, sans-serif;
   color: white;
+  position: relative;
+  top: -147px;
 }
+
 /* Garanta que o container do botão é âncora pro dropdown */
 body
 header
