@@ -14,7 +14,7 @@ header{
     
 }
 body {
-  background-color: PaleGreen; 
+  background-color: rgb(93, 221, 93); 
 }
 
 
@@ -75,7 +75,7 @@ nav ul li.push {
   color: white;
   flex: 1;
   min-width: 300px; 
-  background-color: ForestGreen; 
+  background-color: rgb(28, 118, 28);  
   padding: 15px;
   border-radius: 6px;
 }
