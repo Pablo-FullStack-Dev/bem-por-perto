@@ -113,6 +113,17 @@ nav ul li.push {
   font-size: 16px;          
   line-height: 1;
 }
+.van{
+  padding-left: 700px;
+  font-family: Verdana, sans-serif;
+  color: white;
+}
+
+.de{
+  padding-left: 700px;
+  font-family: Verdana, sans-serif;
+  color: white;
+}
 /* Garanta que o container do botão é âncora pro dropdown */
 body
 header
