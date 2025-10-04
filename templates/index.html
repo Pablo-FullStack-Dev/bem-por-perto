@@ -21,15 +21,22 @@
                 <li><a href="{{ url_for('cadastro') }}">Cadastre-se</a></li>
               </ul>
             </nav>
-          </div>
-            <p class="descri">Cuidado para os que<br> mais precisam, de<br>forma rapida e prática</p>
-            <p class="descricao">cadastre-se na Bem Por Perto agora e<br>consiga cuidadores para as pessoas que<br>ama assim que necessário</p>
-            <nav>
-                <ul>
-                  <li><a href="{{ url_for('cadastro') }}" class="btn">Cadastre-se agora</a></li>
-                  <li><a href="{{ url_for('explorar') }}" class="btn">Explorar cuidadores</a></li>
-                </ul>
-            </nav>
+        </div>
+          <div class="bloco-superior">
+                <div class="texto-principal">
+                    <p class="descri">Cuidado para os que<br> mais precisam, de<br>forma rápida e prática</p>
+                    <p class="descricao">Cadastre-se na Bem Por Perto agora e<br>consiga cuidadores para as pessoas que<br>ama assim que necessário</p>
+                    <nav>
+                    <ul>
+                        <li><a href="{{ url_for('cadastro') }}" class="btn">Cadastre-se agora</a></li>
+                        <li><a href="{{ url_for('explorar') }}" class="btn">Explorar cuidadores</a></li>
+                    </ul>
+                    </nav>
+                </div>
+                <div class="imagem-superior">
+                    <img src="/static/imagens/ft1.jpg" alt="Imagem superior" class="ft1">
+                </div>
+            </div>
             <section id="servicos">
               <h2>Nossos serviços</h2> 
               <div class="servicos">
@@ -48,17 +55,24 @@
               </div>
             </section>
             <p class="des">E muitos outros serviços no nosso site</p>
-            <p class="desc">Planeje seu cuidado<br>para depois reservar<br>um dos nossos cuidadores.</p>
-            <p class="dess">Reserve um cuidador<br>para ter seu serviço<br>garantido no momento<br>que mais precisar,<br>independente do que for.</p>
-            <nav>
-              <ul>
-                <li><a href="{{ url_for('reservar') }}" class="bt">Reserve agora</a></li>
-              </ul>
-            </nav>
-            <h4 class="van">Vantagens:</h4>
-            <p class="de">Escolha o serviço desejado<br>com até 90 dias de<br>antecedência.</p>
-            <p class="de">Cancele com até um dia de<br>antecedência sem custo.</p>
-            <p class="de">Garantia de que o cuidador<br>estará disponível.</p>
+            <div class="bloco-inferior">
+                <div class="imagem-inferior">
+                    <img src="/static/imagens/ft2.jpg" alt="Imagem inferior" class="ft2">
+                </div>
+                <div class="texto-inferior">
+                    <p class="desc">Planeje seu cuidado<br>para depois reservar<br>um dos nossos cuidadores.</p>
+                    <p class="dess">Reserve um cuidador<br>para ter seu serviço<br>garantido no momento<br>que mais precisar,<br>independente do que for.</p>
+                    <nav>
+                    <ul>
+                        <li><a href="{{ url_for('reservar') }}" class="bt">Reserve agora</a></li>
+                    </ul>
+                    </nav>
+                    <h4 class="van">Vantagens:</h4>
+                    <p class="de">Escolha o serviço desejado<br>com até 90 dias de<br>antecedência.</p>
+                    <p class="de">Cancele com até um dia de<br>antecedência sem custo.</p>
+                    <p class="de">Garantia de que o cuidador<br>estará disponível.</p>
+                </div>
+            </div>
             <div class="container" id="espaco">
                <button type="button" id="menu" aria-controls="zona" aria-expanded="false" aria-label="Abrir menu"></button>
                <nav class="caixa-fechada" id="zona">
