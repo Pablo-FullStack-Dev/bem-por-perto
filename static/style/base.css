@@ -205,6 +205,14 @@ nav ul li.push {
   top: -150px;
 }
 
+.vants{
+  width: 120px;
+  height: auto;
+  position: absolute;
+  left: 970px;
+  top: 323px;
+}
+
 .de{
   padding-left: 400px;
   font-family: Verdana, sans-serif;
@@ -214,6 +222,7 @@ nav ul li.push {
 }
 
 .bloco-inferior {
+  position: relative;
   display: flex;
   align-items: flex-start;
   gap: 40px;
