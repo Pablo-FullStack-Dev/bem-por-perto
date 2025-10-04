@@ -28,11 +28,11 @@ def cadastro():
     return render_template("cadas.html")
 
 @app.route("/explorar")
-def cadastro():
+def explorar():
     return render_template("explorar.html")
 
 @app.route("/reservar")
-def cadastro():
+def reservar():
     return render_template("reservar.html")
 
 if __name__ == '__main__': 
