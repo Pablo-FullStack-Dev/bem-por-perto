@@ -128,6 +128,10 @@ nav ul li.push {
   line-height: 2;  
 }
 
+.ns{
+  color: white;
+}
+
 .servicos {
   display: flex;
   gap: 20px;
