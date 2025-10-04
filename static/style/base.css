@@ -131,17 +131,38 @@ nav ul li.push {
 .servicos {
   display: flex;
   gap: 20px;
+  justify-content: space-between;
 }
 
-.servicos > div {
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  flex: 1;
-  min-width: 300px; 
+.servico-item {
+  display: flex;
+  align-items: center; 
   background-color: rgb(28, 118, 28);  
   padding: 15px;
   border-radius: 6px;
+  flex: 1;
+  min-width: 300px;
 }
+
+.servico-item img {
+  max-width: 80px;  
+  margin-right: 15px;  
+}
+
+.servico-texto {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.servico-texto h4 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.servico-texto p {
+  font-size: 16px;
+}
+
 .des{
   font-size: 20px;
   padding-left: 530px;
