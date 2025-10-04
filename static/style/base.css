@@ -72,8 +72,8 @@ nav ul li.push {
 .descri {
   margin-top: 50px;
   padding-left: 200px;
-  font-size: 30px !important;
-  font-family: Verdana, sans-serif;
+  font-size: 40px !important;
+  font-family: Comic Sans MS, Comic Sans, cursive;
   color: white;
   font-size: 18px;
 }
@@ -84,6 +84,33 @@ nav ul li.push {
   font-family: Verdana, sans-serif;
   color: white;
   font-size: 16px;
+}
+
+.bloco-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+}
+
+.texto-principal {
+  flex: 1;
+  color: white;
+}
+
+.imagem-superior img.ft1 {
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.imagem-inferior {
+  padding-left: 80px;
+  padding-top: 40px;
+}
+
+.imagem-inferior img.ft2 {
+  max-width: 500px;
+  border-radius: 20px;
 }
 
 .btn {
@@ -116,28 +143,26 @@ nav ul li.push {
   border-radius: 6px;
 }
 .des{
-  padding-left: 580px;
-  font-family: Verdana, sans-serif;
+  font-size: 20px;
+  padding-left: 530px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
   color: white;
 }
 
 .desc{
   margin-top: 50px;
-  padding-left: 675px;
   font-size: 30px !important;
-  font-family: Verdana, sans-serif;
+  font-family: Comic Sans MS, Comic Sans, cursive;
   color: white;
   font-size: 18px;
 }
 
 .dess{
-  padding-left: 675px;
   font-family: Verdana, sans-serif;
   color: white;
 }
 
 .bt {
-  margin-left: 675px;
   margin-top: 25px;
   background-color: ForestGreen;
   color: white;
@@ -152,7 +177,7 @@ nav ul li.push {
   line-height: 2;
 }
 .van{
-  padding-left: 930px;
+  padding-left: 400px;
   font-family: Verdana, sans-serif;
   color: white;
   position: relative;
@@ -160,11 +185,28 @@ nav ul li.push {
 }
 
 .de{
-  padding-left: 930px;
+  padding-left: 400px;
   font-family: Verdana, sans-serif;
   color: white;
   position: relative;
   top: -147px;
+}
+
+.bloco-inferior {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px 100px;
+}
+
+.imagem-inferior img.ft2 {
+  max-width: 450px;
+  border-radius: 20px;
+}
+
+.texto-inferior {
+  color: white;
+  font-family: Verdana, sans-serif;
 }
 
 /* Garanta que o container do botão é âncora pro dropdown */
