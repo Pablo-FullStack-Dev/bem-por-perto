@@ -200,6 +200,8 @@ nav ul li.push {
   vertical-align: middle;  
   font-size: 17px;          
   line-height: 2;
+  position: relative;
+  z-index: 10;
 }
 .van{
   padding-left: 400px;
@@ -215,6 +217,8 @@ nav ul li.push {
   position: absolute;
   left: 970px;
   top: 323px;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .de{
