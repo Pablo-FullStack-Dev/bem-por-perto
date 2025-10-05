@@ -6,11 +6,18 @@
     <title>Cadastro de Cuidadores</title>
     <link rel="stylesheet" href="/static/style/cadas_cuida.css">
 </head>
-<body>
-    <header>
-     <h1>Cadastro de Cuidadores</h1>
-  </header>
-    <main>
+    <body>
+        <header>
+        <div class="faixa">
+                <nav class="lin">
+                  <ul>
+                    <li><img src="/static/imagens/logo.png" alt="Logo" class="logo"></li>
+                    <li><h1 class="titulo">Cadastro de Cuidadores</h1></li>
+                  </ul>
+                </nav>
+          </div>
+      </header>
+        <main>
       <section class="container">
         <form action="#" method="post" enctype="multipart/form-data">
           <ul>
@@ -64,7 +71,7 @@
             <input type="file" name="certificado" id="certificado" accept=".pdf, image/*" multiple>
             </li>
             
-            <li>
+            <li class="check">
               <label>Disponibilidade de horários:</label><br>
               <input type="checkbox" name="disponibilidade" value="diurno">Diurno<br>
               <input type="checkbox" name="disponibilidade" value="noturno">Noturno<br>
@@ -72,7 +79,7 @@
               <input type="checkbox" name="disponibilidade" value="fins_de_semana">Finais de semana
             </li>
             
-            <li>
+            <li class="check">
               <label>Deseja atuar como:</label><br>
               <input type="radio" name="atuacao" value="residente" required>Cuidador residente<br>
               <input type="radio" name="atuacao" value="diarista">Diarista<br>
@@ -85,6 +92,7 @@
           </li>
         </ul>
       </form>
+       <img src="/static/imagens/sla.jpeg"  class="sla">
     </section>
   </main>
 
@@ -93,6 +101,3 @@
   </footer>
 </body>
 </html>
-
-
-
