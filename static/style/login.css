@@ -1,16 +1,47 @@
-body {
-    margin: 0;
-    height: 100vh;
-    background-image: url("/static/imagens/bp.jpeg");
+body{
+    padding: 5px;
+    background-color: hsl(134, 26%, 66%);
+    background-image: url('/static/imagens/bpp.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.faixa {
+  background-color: #2e7d32;
+  padding: 10px 20px;
+  border: 2px solid white;
+
+  position: fixed;      
+  top: 0;              
+  left: 0;              
+  width: 100%;           
+  z-index: 1000;         
+}
+.lin ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.titulo {
+  font-size: 24px;
+  font-family: w3-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #A8CCB2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,34 +52,35 @@ body {
 .circle {
   position: absolute;
   border-radius: 50%;
-  background-color: #407C48;
+  background-color: #108f21;
   opacity: 0.8;
   z-index: 0;
 }
 .circle.left {
   width: 600px;
   height: 600px;
-  left: -200px;
-  top: 50%;
+  left: -250px;
+  top: 70%;
   transform: translateY(-50%);
 }
 .circle.right {
   width: 500px;
   height: 500px;
-  right: -150px;
-  top: 40%;
+  right: -200px;
+  top: 20%;
   transform: translateY(-40%);
 }
 
 .login-container {
   position: relative;
   z-index: 1;
-  background-color: #407C48;
+  background-color: #108f21;
   color: white;
   padding: 40px;
   border-radius: 10px;
   width: 350px;
   text-align: center;
+  border: 2px solid #FFFFFF;
 }
 
 .login-container h2 {
@@ -91,11 +123,17 @@ body {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
+  gap: 10px;
 }
 .social-login button {
   background: white;
   border: none;
-  padding: 10px 15px;
+  padding: 5px 20px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.social-login button img {
+  width: 30px;
+  height: 30px;
 }
