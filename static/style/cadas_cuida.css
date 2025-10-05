@@ -9,7 +9,7 @@ form li label {
 }
 
 form li input, form li select {
-  width: 100%;
+  width: 20%;
   padding: 8px;
   border-radius: 4px;
   border: 1px solid #ccc;
