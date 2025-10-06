@@ -1,0 +1,15 @@
+.
+├── app/ — pacote principal da aplicação (código-fonte e recursos do app)
+│   ├── __pycache__/ — cache de bytecode gerado automaticamente pelo Python; pode ser ignorado no controle de versão
+│   ├── routes/ — módulos de rotas/endpoints da aplicação (ex.: main.py, auth.py), onde fica a lógica de cada URL
+│   ├── static/ — arquivos estáticos servidos diretamente (sem processamento)
+│   │   ├── imgs/ — imagens usadas no front-end (logos, ícones, banners, etc.)
+│   │   ├── js/ — scripts JavaScript do front-end (interatividade/comportamento)
+│   │   └── css/ — folhas de estilo (CSS) responsáveis pelo layout e visual
+│   ├── templates/ — templates HTML (ex.: Jinja2) renderizados com dados dinâmicos
+│   ├── __init__.py — inicializa o pacote/app (cria a instância da aplicação, carrega configs, registra blueprints)
+│   └── anotacoes.txt — notas e lembretes do projeto (uso pessoal/apoio)
+├── README.md — documentação principal: visão geral, setup, como rodar, estrutura e instruções de uso
+├── requirements.txt — lista de dependências Python e versões (instalação com: pip install -r requirements.txt)
+├── run.py — ponto de entrada para iniciar o servidor local (ex.: app.run() no Flask)
+└── vercel.json — configuração da Vercel (build, roteamento e regras de deploy/serving)

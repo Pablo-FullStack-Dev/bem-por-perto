@@ -1,14 +1,20 @@
 
 
+@app.route("/sobre")
+def sobre():
+    return render_template("sobre.html")
+
+
+@app.route("/ajuda")
+def ajuda():
+    return render_template("ajuda.html")
 
 
 
+@app.route("/explorar")
+def explorar():
+    return render_template("explorar.html")
 
-
-
-
-
-
-
-
-
+@app.route("/reservar")
+def reservar():
+    return render_template("reservar.html")

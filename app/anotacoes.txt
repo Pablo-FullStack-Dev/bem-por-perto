@@ -1,0 +1,1 @@
+No arquivo "__init__.py" que está dentro da pasta "app" fica o corpo aonde o back end vai mexer.
