@@ -1,0 +1,16 @@
+
+    <main>
+        <section>
+            <div class="container" id="corpo">
+                <div class="container" id="principal">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div class="container" id="Sobre">
+            </div>
+        </section>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
