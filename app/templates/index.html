@@ -119,6 +119,39 @@
                 </div>
             </div>
         </section>
+        <section>
+
+            {% if dados %} 
+                
+                <ul>
+                    {% for dado in dados %}
+                    <li>
+                        {{ dado.nome }}
+                    </li>
+                    <li>
+                        {{ dado.data }}
+                    </li>
+                    <li>
+                        {{ dado.cpf }}
+                    </li>
+                    <li>
+                        {{dado.genero}}
+                    </li>
+                    <li>
+                        {{dado.endereco}}
+                    </li>
+                    <li>
+                        {{dado.telefone}}
+                    </li>
+                    {%endfor%}
+                </ul>
+                
+                {{ else }}
+                <p>---</p>
+            {% endif %}
+
+        </section>
+
     </main>
     <footer>
         <section>

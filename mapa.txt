@@ -1,5 +1,5 @@
 .
-├── app/ — pacote principal da aplicação (código-fonte e recursos do app)
+├── app/ —
 │   ├── __pycache__/ — cache de bytecode gerado automaticamente pelo Python; pode ser ignorado no controle de versão
 │   ├── routes/ — módulos de rotas/endpoints da aplicação (ex.: main.py, auth.py), onde fica a lógica de cada URL
 │   ├── static/ — arquivos estáticos servidos diretamente (sem processamento)
@@ -13,3 +13,4 @@
 ├── requirements.txt — lista de dependências Python e versões (instalação com: pip install -r requirements.txt)
 ├── run.py — ponto de entrada para iniciar o servidor local (ex.: app.run() no Flask)
 └── vercel.json — configuração da Vercel (build, roteamento e regras de deploy/serving)
+ pacote principal da aplicação (código-fonte e recursos do app)
