@@ -9,6 +9,55 @@
     <form action="#">
 
         <li>
+    <header>
+        <ul>
+            <li id="zona_img">
+                <img src="/static/imgs/logo.jpg" alt="logo">
+            </li>
+            <li >
+                <h1>BEM POR PERTO</h1>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <form action="#" method="post">
+                <ul>
+                    <li>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" placeholder="Nome completo" id="nome">
+                    </li>
+                    <li>
+                        <label for="data_nascimento">Data de Nascimento</label>
+                        <input type="date" name="data_nascimento" id="data_nascimento" required>
+                    </li>
+                    <li>
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" maxlength="14" required>
+                    </li>
+                    <li>
+                        <label for="genero">Gênero</label>
+                        <select name="genero" id="genero" required>
+                          <option value="">Selecione</option>
+                          <option value="feminino">Feminino</option>
+                          <option value="masculino">Masculino</option>
+                          <option value="outro">Outro</option>
+                          <option value="prefiro_nao_dizer">Prefiro não dizer</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="Endereço">Endereço</label>
+                        <input type="Text" name="Endereço" placeholder="Cidade, Bairro, Rua, Número" id="Endereço">
+                    </li>
+                    <li>
+                      <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="(11) 99999-9999" maxlength="15" required>
+                    </li>
+                    <li>
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" required>
+                    </li>
+                    <li>
                         <h2>Dados do Idoso</h2>
                       </li>
             
