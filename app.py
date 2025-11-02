@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, flash, redirect
 
 
-app = Flask(__name__)  
+app = Flask(__name__, template_folder="app/templates", static_folder="app/static")
 
 @app.route("/inicial")
 def inicial():
@@ -13,7 +13,7 @@ def sobre():
 
 @app.route("/cuidador")
 def cuidador():
-    return render_template("cadas_cuidador.html")
+    return render_template("cuidador/cadast.html")
 
 @app.route("/ajuda")
 def ajuda():
@@ -25,7 +25,7 @@ def login():
 
 @app.route("/cadastro")
 def cadastro():
-    return render_template("cadas.html")
+    return render_template("cliente/formulario.html")
 
 @app.route("/explorar")
 def explorar():

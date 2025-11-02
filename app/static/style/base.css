@@ -8,7 +8,7 @@
 body{
     padding: 5px;
     background-color: hsl(135, 36%, 76%);
-    background-image: url('app/static/imgs/bpp.png');
+    background-image: url('/static/imgs/bpp.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
