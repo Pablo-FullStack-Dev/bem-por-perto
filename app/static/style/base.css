@@ -320,15 +320,15 @@ button#menu{
 
 /* ESTADO ABERTO do nav */
 #zona.caixa-aberta{
-    width: 220px;      /* ajuste como preferir */
+    width: 500px;      /* ajuste como preferir */
     height: 180px;     /* ajuste como preferir */
     opacity: 1;
     pointer-events: auto;
 
-    background: #fff;
-    border: 1px solid #dcdcdc;
+    background: #32a859;
+    border: 1px solid #2efa00;
     border-radius: 8px;
-    padding: 8px;
+    padding: 50px;
     box-shadow: 0 8px 24px rgba(0,0,0,.12);
 }
 
