@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, flash, redirect
+from app import app
 
 
 app = Flask(__name__, template_folder="app/templates", static_folder="app/static")
