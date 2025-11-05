@@ -1,5 +1,6 @@
 from app import mysql
 
+#cadastro do idoso
 class Cadastro:
     def __init__(self, no, da, cp,ge, en, te): # , se
         self.nome = no
@@ -15,11 +16,12 @@ class Cadastro:
         try:
             cur = mysql.connection.cursor()
             #insere um novo cadastro na tabela 'cadastro'
+            #Aqui você coloca os campos criados na tabela idoso
             sql = """
-                INSERT INTO cadastro (nome, data_nascimento, cpf, genero, endereco, telefone)
+                INSERT INTO idoso (nome, data_nascimento, cpf, genero, endereco, telefone)
                 VALUES (%s, %s, %s, %s, %s, %s)
             """
-            cur.execute(sql, (self.nome, self.nascimento, self.cpf, self.genero, self.endereco, self.telefone))
+            cur.execute(sql, (self.nome, self.nascimento, self.pc, self.gene, self.end, self.contato))
             mysql.connection.commit()
             cur.close()
             return True
