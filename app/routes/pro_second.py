@@ -9,7 +9,7 @@ def pro():
     numerar = request.form.get('cpf', '').strip() #o numerar seria o cpf
     genero = request.form.get('genero', '').strip()
     endereco = request.form.get('endereco', '').strip()
-    telefone = request.form.get('telefone', '').strip()
+    contato = request.form.get('telefone', '').strip()
     
     if not nome or not data or not numerar:
         flash("Preencha todos os campos obrigatórios")
