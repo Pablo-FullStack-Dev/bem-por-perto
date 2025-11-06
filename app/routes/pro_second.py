@@ -1,4 +1,4 @@
-lfrom flask import redirect, url_for, request, flash
+from flask import redirect, url_for, request, flash
 from app import app
 from app.models.geral import *
 
