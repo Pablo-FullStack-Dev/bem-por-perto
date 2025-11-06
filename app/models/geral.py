@@ -47,7 +47,7 @@ class Cuidador:
         """
         cur = mysql.connection.cursor()
         sql = """
-            INSERT INTO cadastro_cuidador (nome, data_nascimento, cpf, genero, endereco, telefone)
+            INSERT INTO cadastro_cuidador (nome, data_nascimento, email, genero, endereco, telefone, formacao)
             VALUES (%s, %s, %s, %s, %s, %s, %s)
         """
         valores = (self.nome, self.nascimento, self.cpf, self.genero, self.endereco, self.telefone)
