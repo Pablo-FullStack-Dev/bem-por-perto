@@ -31,11 +31,11 @@ def pro_cuidador():
     formacao = request.form.get("formacao", "").strip()
 
 
-    if not nome or not data or not cpf:
+    if not nome or not data or not email:
         flash("Preencha todos os campos obrigatórios")
         return redirect(url_for("cuidador"))
 
-    novo = Cuidador(nome, data, cpf, genero, endereco, telefone)
+    novo = Cuidador(nome, data, email, genero, endereco, telefone, formacao)
     novo.adicionar()
     flash("Cadastro de cuidador realizado com sucesso!")
     return redirect(url_for("home"))

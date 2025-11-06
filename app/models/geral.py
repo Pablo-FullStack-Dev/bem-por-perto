@@ -18,11 +18,12 @@ class Cadastro:
         atualizar aqui no comando INSERT INTO.
         """
         cur = mysql.connection.cursor()
+            #aqui no insetrt, colocar o nome da tabelas de das colunas criadas no banco, masnter o  VALUES (%s, %s ..)
         sql = """
-            INSERT INTO cadastro_idoso (nome, data_nascimento, cpf, genero, endereco, telefone)
+            INSERT INTO nome_tabela_idoso (nome, data_nascimento, cpf, genero, endereco, telefone)
             VALUES (%s, %s, %s, %s, %s, %s)
         """
-        valores = (self.nome, self.nascimento, self.cpf, self.genero, self.endereco, self.telefone)
+        valores = (self.nome, self.nascimento, self.pc, self.gene, self.end, self.contato)
         cur.execute(sql, valores)
         mysql.connection.commit()
         cur.close()
@@ -46,11 +47,12 @@ class Cuidador:
         atualizar aqui no comando INSERT INTO.
         """
         cur = mysql.connection.cursor()
+                #aqui no insetrt, colocar o nome da tabelas de das colunas criadas no banco, masnter o  VALUES (%s, %s ..)
         sql = """
             INSERT INTO cadastro_cuidador (nome, data_nascimento, email, genero, endereco, telefone, formacao)
             VALUES (%s, %s, %s, %s, %s, %s, %s)
         """
-        valores = (self.nome, self.nascimento, self.cpf, self.genero, self.endereco, self.telefone)
+        valores = (self.nome, self.nascimento, self.email, self.genero, self.endereco, self.telefone, self.formacao)
         cur.execute(sql, valores)
         mysql.connection.commit()
         cur.close()
@@ -66,9 +68,10 @@ class Login:
         """
         Insere um novo login no banco MySQL.
         Os devs de banco devem confirmar o nome da tabela (login)
-        e as colunas (cpf, senha, tipo).
+        e as colunas (cpf, senha).
         """
         cur = mysql.connection.cursor()
+                #aqui no insetrt, colocar o nome da tabelas de das colunas criadas no banco, masnter o  VALUES (%s, %s ..)
         sql = """
             INSERT INTO login (cpf, senha)
             VALUES (%s, %s)
