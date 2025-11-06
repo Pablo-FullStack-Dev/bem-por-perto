@@ -58,7 +58,7 @@ class Cuidador:
 
 #classe para o login
 class Login:
-    def __init__(self, cpf, senha, tipo):
+    def __init__(self, cpf, senha):
         self.cpf = cpf
         self.senha = senha  # A senha deve ser armazenada já criptografada
         
@@ -73,7 +73,7 @@ class Login:
             INSERT INTO login (cpf, senha)
             VALUES (%s, %s)
         """
-        valores = (self.cpf, self.senha, self.tipo)
+        valores = (self.cpf, self.senha)
         cur.execute(sql, valores)
         mysql.connection.commit()
         cur.close()
