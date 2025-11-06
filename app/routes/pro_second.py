@@ -1,4 +1,4 @@
-from flask import redirect, url_for, request, flash
+lfrom flask import redirect, url_for, request, flash
 from app import app
 from app.models.geral import *
 
@@ -24,10 +24,12 @@ def pro():
 def pro_cuidador():
     nome = request.form.get("nome", "").strip()
     data = request.form.get("data_nascimento", "").strip()
-    cpf = request.form.get("cpf", "").strip()
+    email = request.form.get("email", "").strip()
     genero = request.form.get("genero", "").strip()
     endereco = request.form.get("endereco", "").strip()
     telefone = request.form.get("telefone", "").strip()
+    formacao = request.form.get("formacao", "").strip()
+
 
     if not nome or not data or not cpf:
         flash("Preencha todos os campos obrigatórios")
