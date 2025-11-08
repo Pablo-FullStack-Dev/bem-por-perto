@@ -4,5 +4,4 @@ from config import dados
 
 @app.route("/")
 def home():
-    
     return render_template("index.html", dados=dados)
