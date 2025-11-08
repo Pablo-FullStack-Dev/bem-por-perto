@@ -1,4 +1,0 @@
-#isso faz com que o github ignore os dados do arquivo .env
-.env
-__pycache__/
-*.pyc
