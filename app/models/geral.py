@@ -1,3 +1,7 @@
+# esqueleto da POO:
+
+
+
 # O problema daqui é porque o banco de dados foi feito pensando de um local fisico e não em um local de acesso movel
 
 # # from app import mysql
