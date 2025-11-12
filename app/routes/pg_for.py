@@ -4,4 +4,4 @@ from app import app
 
 @app.route("/cadastro")
 def cadastro():
-    return render_template("cadas.html")
+    return render_template("/cliente/formulario.html")
