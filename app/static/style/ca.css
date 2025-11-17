@@ -14,8 +14,8 @@ body{
     header{
         width: 100%;
         height: 100px;
-        background-color: #407C48;
-        border: 1px solid red;
+        background-color: #407c48ed;
+        border: 1px solid rgb(77, 255, 0);
         ul{
             width: 100%;
             height: 100%;
@@ -46,7 +46,7 @@ body{
         section.container{
             width: 50%;
             height: 50%;
-            background-color: #407C48;
+            background-color: #407c48f0;
             border: 1px solid white;
             border-radius: 10px;
             margin-left: auto;

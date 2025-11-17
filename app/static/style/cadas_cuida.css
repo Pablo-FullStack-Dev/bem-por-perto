@@ -78,3 +78,14 @@ form li input, form li select {
   z-index: 1;
   border-radius: 20px;
 }
+
+.quadrado{  /* para melhorar a visibilidade do formulario*/
+  position: fixed;
+  bottom: 20px;   
+  left: 20px;     
+  width: 580px;    
+  height: 600px;
+  background-color: rgba(11, 122, 46, 0.316); 
+  border-radius: 8px;      /* opcional */
+  z-index: -1;
+}
