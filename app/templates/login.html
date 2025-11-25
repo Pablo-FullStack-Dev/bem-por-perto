@@ -19,9 +19,9 @@
       <div class="circle right"></div>
       <div class="login-container">
         <h2>Bem vindo de volta!</h2>
-        <form  method="get" action="/inicial">
-          <input type="text" placeholder="Digite seu CPF ou e-mail" required>
-          <input type="password" placeholder="Digite sua senha" required>
+        <form  method="post" action="{{ url_for('veriq') }}">
+          <input type="text" placeholder="Digite seu CPF ou e-mail" name="email" required>
+          <input type="password" placeholder="Digite sua senha" name="p_v" required>
           <button type="submit">Entrar</button>
         </form>
         <a href="#">Esqueceu sua senha?</a>

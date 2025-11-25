@@ -1,4 +1,28 @@
 import mysql.connector
+import bcrypt
+
+import bcrypt
+
+def gerar_hash(senha: str) -> str:
+    return bcrypt.hashpw(senha.encode(), bcrypt.gensalt()).decode()
+
+
+def verificar_hash(senha_digitada: str, hash_salvo: str) -> bool:
+    return bcrypt.checkpw(senha_digitada.encode(), hash_salvo.encode())
+
+
+
+
+
+
+
+
+    
+
+    # ----- verificação real -----
+    return bcrypt.checkpw(transformador_s.encode(), transformador_e.encode())
+
+
 
 class My:
     def __init__(self):
@@ -37,7 +61,7 @@ class Cursor(My):
     
 
 class Comandos(Cursor):
-    def adicionar(self, n,i,dia,mes,ano,cf,g,ed,ce,te,e):
+    def adicionar(self, n,i,dia,mes,ano,cf,g,ed,ce,te,e, senha):
         nome = str(n)
         idade = int(i)
         dia = int(dia)
@@ -49,12 +73,31 @@ class Comandos(Cursor):
         cep = str(ce)
         telefone = str(te)
         email = str(e)
+        # t_str = str(gerador(senha))
+        # preciso puxar o token antes de enviar pro cursor.execute
 
         
-        self.cursor.execute(f""" insert into USUARIO(nome, idade, data_de_nascimento, cpf, genero, endereco, cep, telefone, email)
-                             values ('{nome}', {idade}, '{ano}-{mes}-{dia}', '{cpf}', '{genero}', '{endereco}', '{cep}', '{telefone}', '{email}')
+        self.cursor.execute(f""" insert into USUARIO(nome, idade, data_de_nascimento, cpf, genero, endereco, cep, telefone, email, token)
+                             values ('{nome}', {idade}, '{ano}-{mes}-{dia}', '{cpf}', '{genero}', '{endereco}', '{cep}', '{telefone}', '{email}', '{gerar_hash(senha)}')
                              """)
         self.atualizar()
         self.fechar()
         self.desconectar()
-        return "dados enviados"
+        return "dados enviados" 
+    
+    def verificar(self, email, senha_digitada):
+    # Buscar hash do banco
+        self.cursor.execute(f"SELECT token FROM USUARIO WHERE email = '{email}'")
+        resultado = self.cursor.fetchall()
+        
+
+    
+
+    # pegar hash salvo
+        hash_salvo = resultado[0]['token']   # [(hash,)] → hash
+
+    # verificar a senha
+        if verificar_hash(senha_digitada, hash_salvo):
+            return True
+        else:
+            return False

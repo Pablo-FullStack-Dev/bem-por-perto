@@ -18,6 +18,8 @@ def cadas():
     
     telefone = request.form.get('telefone', '').strip()
     email = request.form.get('email', '').strip() # foi adicionado dia 25/ de novembro
+    passe = request.form.get('passe', '').strip() # foi adicionado dia 25/ de novembro
+
     # agr é colocar as infomações na POO e adicionar +1 função na POO
 
 # ============================================================
@@ -27,7 +29,7 @@ def cadas():
         return redirect(url_for('cadastro'))
     elif nome and idade and dia and mes and ano and cpf and genero and endereco and telefone and email:
         novo_usuario = Comandos()
-        if novo_usuario.adicionar(n=nome,i=idade,dia=dia,mes=mes,ano=ano,cf=cpf,g=genero,ed=endereco,ce=cep,te=telefone,e=email):
+        if novo_usuario.adicionar(n=nome,i=idade,dia=dia,mes=mes,ano=ano,cf=cpf,g=genero,ed=endereco,ce=cep,te=telefone,e=email, senha=passe):
 
             print("\nDados adicionados!!!\n")
             return redirect(url_for('home')) # agr as informações estaos sendo captadas.
