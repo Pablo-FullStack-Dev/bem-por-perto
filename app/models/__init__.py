@@ -1,1 +1,1 @@
-from .geral import *
+from .banco import *

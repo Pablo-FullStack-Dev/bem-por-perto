@@ -1,1 +1,49 @@
 No arquivo "__init__.py" que está dentro da pasta "app" fica o corpo aonde o back end vai mexer.
+
+
+
+<li>
+                        <h2>Dados do Idoso</h2>
+                      </li>
+            
+                      <li>
+                        <label for="nome_idoso">Nome do idoso</label>
+                        <input type="text" name="nome_idoso" id="nome_idoso" required>
+                      </li>
+            
+                      <li>
+                        <label for="idade_idoso">Idade do idoso</label>
+                        <input type="number" name="idade_idoso" id="idade_idoso" required>
+                      </li>
+            
+                      <li>
+                        <br><label>Condições especiais</label><br>
+                        <label><input type="checkbox" name="condicoes[]" value="alzheimer"> Alzheimer</label><br>
+                        <label><input type="checkbox" name="condicoes[]" value="mobilidade"> Mobilidade reduzida</label><br>
+                        <label><input type="checkbox" name="condicoes[]" value="diabetes"> Diabetes</label><br>
+                        <label><input type="checkbox" name="condicoes[]" value="medicacao"> Acompanhamento de medicação</label>
+                      </li>
+            
+                       <li>
+                        <br><label>Necessidades específicas</label><br>
+                        <label><input type="checkbox" name="necessidades[]" value="companhia"> Companhia</label><br>
+                        <label><input type="checkbox" name="necessidades[]" value="locomocao"> Locomoção</label><br>
+                        <label><input type="checkbox" name="necessidades[]" value="higiene"> Higiene pessoal</label><br>
+                        <label><input type="checkbox" name="necessidades[]" value="consultas"> Acompanhamento em consultas</label><br>
+                        <label><input type="checkbox" name="necessidades[]" value="alimentacao"> Ajuda com alimentação</label>
+                      </li>
+            
+                      <li>
+                        <br><label>Horários desejados</label><br>
+                        <label><input type="checkbox" name="horarios[]" value="diurno"> Diurno</label><br>
+                        <label><input type="checkbox" name="horarios[]" value="noturno"> Noturno</label><br>
+                        <label><input type="checkbox" name="horarios[]" value="fins_semana"> Finais de semana</label><br>
+                        <label><input type="checkbox" name="horarios[]" value="plantoes"> Plantões</label>
+                      </li>
+            
+                      <li>
+                        <br><label>Tipo de serviço</label><br>
+                        <label><input type="radio" name="tipo_servico" value="residente" required> Cuidador residente</label><br>
+                        <label><input type="radio" name="tipo_servico" value="diarista"> Diarista</label><br>
+                        <label><input type="radio" name="tipo_servico" value="por_hora"> Por hora</label>
+                      </li>

@@ -1,0 +1,29 @@
+usuario
++--------------------+--------------+------+-----+---------+----------------+
+| Field              | Type         | Null | Key | Default | Extra          |
++--------------------+--------------+------+-----+---------+----------------+
+| id                 | int          | NO   | PRI | NULL    | auto_increment |
+| nome               | varchar(150) | NO   |     | NULL    |                |
+| idade              | int          | NO   |     | NULL    |                |
+| data_de_nascimento | date         | NO   |     | NULL    |                |
+| cpf                | varchar(11)  | NO   |     | NULL    |                |
+| genero             | varchar(11)  | YES  |     | NULL    |                |
+| endereco           | varchar(100) | NO   |     | NULL    |                |
+| cep                | varchar(8)   | NO   |     | NULL    |                |
+| telefone           | varchar(15)  | NO   |     | NULL    |                |
+| email              | varchar(254) | NO   |     | NULL    |                |
++--------------------+--------------+------+-----+---------+----------------+
+
+
+cuidadores
+
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| id       | int          | NO   | PRI | NULL    | auto_increment |
+| nome     | varchar(150) | NO   |     | NULL    |                |
+| idade    | int          | NO   |     | NULL    |                |
+| email    | varchar(254) | NO   |     | NULL    |                |
+| telefone | varchar(15)  | NO   |     | NULL    |                |
+| servico  | varchar(100) | NO   |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
